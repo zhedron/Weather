@@ -21,14 +21,9 @@ public class Main {
 		
 		Elements weather = doc.select("div.weather-detail-desktop");
 		
-		for (Element element : weather.select("a[href]")) {
+		for (Element element : weather.select("div.menu-basic__item")) {
 			System.out.println(element.text());
 		}
-		
-	//	for (Element element : weather.select("p")) {
-		//	System.out.println(element.text());
-	//	}
-
 	}
 
 }
